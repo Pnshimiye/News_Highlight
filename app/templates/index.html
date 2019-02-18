@@ -1,5 +1,7 @@
 
 {% import 'macros.html' as macro%}
+{% extends 'base.html'%}
+ 
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +14,7 @@
     </head>
     <body>
         <h1>Welcome to the best news highlight website </h1>
+        {% block content %}
 
          <!--  General sources section -->
 
@@ -40,5 +43,6 @@
         <ul>
             {{ macro.displaySourceList(sports)}}
         </ul>
+        {% endblock%}
     </body>
 </html> 
