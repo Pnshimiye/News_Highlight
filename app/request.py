@@ -2,7 +2,7 @@ from app import app
 import urllib.request,json
 from .models import source
 
-source = source.Source
+Source = source.Source
 
 #Getting api key
 api_key = app.config['SOURCE_API_KEY']
@@ -22,14 +22,14 @@ def get_sources(category):
         get_sources_data = url.read()
         get_sources_response = json.loads(get_sources_data)
 
- 
+    
 
       
         sources_results = None
 
-        if get_sources_response['results']:
-           sources_results_list = get_sources_response['results']
-           sources_results = process_results(sources_results_list)
+        if get_sources_response['sources']:
+            sources_results_list = get_sources_response['sources']
+            sources_results = process_results(sources_results_list)
 
 
     return sources_results
