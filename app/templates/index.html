@@ -1,7 +1,5 @@
-
 {% import 'macros.html' as macro%}
-{% extends 'base.html'%}
- 
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,36 +11,48 @@
         {% endif %}
     </head>
     <body>
+         
+        
         <h1>Welcome to the best news highlight website </h1>
-        {% block content %}
 
-         <!--  General sources section -->
+        <!--  General sources section -->
 
 
         <h3> General News Sources</h3>
-
+        
         <ul>
             {{ macro.displaySourceList(general)}}
-        </ul>
+        </ul>           
+
+
+        
 
         <!-- Business sources -->
         <h3> Business News Sources </h3>
 
         <ul>
-            {{ macro.displaySourceList(business)}}
-        </ul>
-
+                {{ macro.displaySourceList(business)}}
+        </ul>           
+    
+        
         <!-- entertainment  sources-->
         <h3>Entertainment News Sources</h3>
-        <ul>
-            {{ macro.displaySourceList(entertainment)}}
-        </ul>
 
-        <!-- sports  sources-->
-        <h3>Sports News Sources</h3>
         <ul>
-            {{ macro.displaySourceList(sports)}}
-        </ul>
-        {% endblock%}
+                {{ macro.displaySourceList(entertainment)}}
+        </ul>           
+
+
+           <!-- Sports news sources -->
+        
+        <h3>Sports News Sources</h3>
+
+        <ul>
+                {{ macro.displaySourceList(sports)}}
+        </ul>           
+
+       
+                 
+        
     </body>
 </html> 
