@@ -21,7 +21,7 @@ class ArticleTest(unittest.TestCase):
         test case  to test if the Articles object is being properly instantiated
         '''
        
-        self.assertEqual(self.new_article.author,"Pauline")
+        self.assertEqual(self.new_article.source,"Pauline")
         self.assertEqual(self.new_article.title,"Python")
         self.assertEqual(self.new_article.description,'Python is getting Crazy')
         self.assertEqual(self.new_article.url,"http://www.abc.net.au/news/2019-02-16/eight-vale-sa-employees-arrested-over-deadly-brazil-dam-collapse/10818196")

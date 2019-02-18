@@ -31,13 +31,17 @@ def index():
 
  
 
-# @app.route('/source/<source_id>')
-# def source(source_id):
+#from .request import get_movies
 
-#     '''
-#     View news page function that returns the source details page and its data
-#     '''
-#     source = get_source(id)
-#     name = f'{source.id}'
+@app.route('/')
+def index():
 
-#     return render_template('source.html',id = id,source = source)
+    '''
+    View root page function that returns the index page and its data
+    '''
+
+    # Getting popular movie
+    popular_movies = get_movies('popular')
+    print(popular_movies)
+    title = 'Home - Welcome to The best Movie Review Website Online'
+    return render_template('index.html', title = title,popular = popular_movies)

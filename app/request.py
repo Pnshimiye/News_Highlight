@@ -68,11 +68,11 @@ def process_results(source_list):
 
     return source_results
 
-def get_article(title):
+def get_article(id):
     '''
     Function that gets the json response to our url request
     '''
-    get_articles_url = article_base_url.format(title,api_key)
+    get_articles_url = article_base_url.format(source,api_key)
 
     with urllib.request.urlopen(get_articles_url) as url:
         get_articles_data = url.read()
@@ -94,14 +94,13 @@ def process_results(article_list):
 
     Args:
           source_list: A list of dictionaries that contain source details
-
     Returns :
           source_results: A list of source objects
     '''
     articles_results = []
     for article_item in article_list:
 
-        author= article_item.get('author')
+        source= article_item.get('source')
         title= article_item.get('title')
         description = article_item.get('description')
         url = article_item.get('url')        
@@ -110,7 +109,7 @@ def process_results(article_list):
         
 
         if  title:
-            article_object = Article(author,title,description,url,urlToImage,publishedAt)
+            article_object = Article(source,title,description,url,urlToImage,publishedAt)
             article_results.append(article_object)
 
     return article_results
