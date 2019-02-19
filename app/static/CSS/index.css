@@ -2,6 +2,7 @@ body{
   background-color: rgb(46, 66, 70);
   color: black;
   text-align:center;
+  justify-content: center;
 }
 ul{
   display: inline-block;
