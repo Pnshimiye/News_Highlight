@@ -2,12 +2,19 @@ body{
   background-color: rgb(46, 66, 70);
   color: black;
   text-align:center;
-  justify-content: center;
+  justify-content: center center;
 }
 ul{
-  display: inline-block;
+  display: row;
+  margin-right:auto;
+  margin-left:auto;
 }
 h3{
   font-weight: 900;
-  color: rgb(230, 207, 173)
+  color: rgb(230, 207, 173);
+}
+
+.container{
+  margin-right:auto;
+  margin-left:auto;
 }
