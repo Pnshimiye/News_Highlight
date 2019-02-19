@@ -4,19 +4,24 @@
 <div class="container">
  {% for article in articles%}
     <div class="row">
-        <div class = "image url">
-          <img src="{{article.urlToImage}}" alt="News Image"class="img-responsive">
-        </div>
+      <div class ="col-md-6">
+          <div class = "image url">
+            <img src="{{article.urlToImage}}" alt="News Image"class="img-responsive">
+          </div>
 
-        <div>
-            <h3>{{ article.title }}</h3>
+            <div>
+              <h3>{{ article.title }}</h3>
 
-            <p class="description"> {{ article.description }}</p>
-            <p class="author"><b>{{ article.author }}</b> </p>
-            <p> <i><a href ="{{ article.url}}"> Read full Article</a> </i> </p>
-
+              <p class="description"> {{ article.description }}</p>
+              <p class="author"><b>{{ article.author }}</b> </p>
+              <p> <i><a href ="{{ article.url}}"> Read full Article</a> </i> </p>
+            </div>
         </div>
     </div>
  {%endfor%}
 </div>
-{% endblock %}
+<!-- {% endblock %}
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %} -->

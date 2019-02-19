@@ -2,7 +2,7 @@
 <!-- Content block -->
 {% block content %}
 <div class="container">
-  
+
     <h3> General News Sources</h3>
         
     <ul>    
@@ -43,4 +43,8 @@
 
     
 </div>
+{% endblock %}
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 {% endblock %}
