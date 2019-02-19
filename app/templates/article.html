@@ -1,1 +1,22 @@
-<!-- <h1> Article {{ id }} </h1> -->
+{% extends 'base.html'%}
+<!-- Content block -->
+{% block content %}
+<div class="container">
+ {% for article in articles%}
+    <div class="row">
+        <div class = "image url">
+          <img src="{{article.urlToImage}}" alt="News Image"class="img-responsive">
+        </div>
+
+        <div>
+            <h3>{{ article.title }}</h3>
+
+            <p class="description"> {{ article.description }}</p>
+            <p class="author"><b>{{ article.author }}</b> </p>
+            <p> <i><a href ="{{ article.url}}"> Read full Article</a> </i> </p>
+
+        </div>
+    </div>
+ {%endfor%}
+</div>
+{% endblock %}

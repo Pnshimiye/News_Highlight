@@ -2,6 +2,44 @@
 <!-- Content block -->
 {% block content %}
 <div class="container">
+  
+    <h3> General News Sources</h3>
+        
+    <ul>    
+        {{ macro.displaySourceList(general)}}
+    </ul>           
+
+
+    
+
+    <!-- Business sources -->
+    <h3> Business News Sources </h3>
+
+    <ul>
+            {{ macro.displaySourceList(business)}}
+    </ul>      
+    
+    
+
+
+
+    
+    <!-- entertainment  sources-->
+    <h3>Entertainment News Sources</h3>
+
+    <ul>
+            {{ macro.displaySourceList(entertainment)}}
+    </ul>           
+
+
+       <!-- Sports news sources -->
+    
+    <h3>Sports News Sources</h3>
+
+    <ul>
+            {{ macro.displaySourceList(sports)}}
+    </ul>           
+    
 
     
 </div>
