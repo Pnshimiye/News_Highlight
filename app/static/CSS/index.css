@@ -1,7 +1,12 @@
-.container{
-  background-color: black;
-  color:white;
-}
 body{
-  text-align: center;
+  background-color: rgb(46, 66, 70);
+  color: black;
+  text-align:center;
+}
+ul{
+  display: inline-block;
+}
+h3{
+  font-weight: 900;
+  color: rgb(230, 207, 173)
 }
