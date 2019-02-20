@@ -1,35 +1,47 @@
 body{
-  background-color: rgb(46, 66, 70);
+  background-color: rgb(76, 108, 114);
   color: black;
   text-align:center;
   justify-content: center center;
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/02/51/79/3957837a1b1e0d0.jpg');
+  background-blend-mode: inherit;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover;   */
 
   display:inline;
 }
-  /* background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/02/51/79/3957837a1b1e0d0.jpg');
-  background-repeat: no-repeat;*/
 
+.container{
+  background-color: rgb(55, 79, 83);
  
-.jumbotron{
-  background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/02/51/79/3957837a1b1e0d0.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   
-} 
- 
+ }
+
+
 
 #title{
-  color: rgb(212, 200, 172);
-  font-feature-settings: "abvs"
-
+  color: rgb(0, 0, 0);
+  font-feature-settings: "afrc";
+  font-family: monospace;
+  font-weight: bolder;
+  background-color: rgb(253, 253, 253);
+  border: 0rem;
+  width:600px;
+  height:50px;
+  margin-right:250px;
+  margin-left:600px;
 }
  
 ul{
   display:inline block;
+  /* display:flex; */
+  /* margin-left: 200px;
+  margin-right: 200px; */
+  justify-content: center;
 }
 .container{
-  margin-left:800;
-  margin-right:auto;
+  padding-left:340px;
+  padding-right:0px;
 }
 h1{
   font-family: monospace;
@@ -37,6 +49,24 @@ h1{
   font-synthesis: weight;
   font-weight: bolder;
 }
-#name:hover{
+#name{
 color:rgb(212, 200, 172);
 }
+
+@keyframes name{
+  0%{opacity: 0;}
+  50%{opacity: .5;}
+  100%{opacity: 1;}
+  }
+
+  
+#name:hover{
+  color:white;
+}
+.source{
+  justify-content: center;
+}
+#welcome{
+  font-family: monospace;
+}
+ 

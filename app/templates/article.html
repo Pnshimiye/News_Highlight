@@ -3,27 +3,27 @@
 
 {% block content %}
 
- {% for article in articles %}
- 
- <div class="container"> 
-    <div class="row">
-      <div class ="col-md-6">
-          <div class = "image-url">
-            <img src="{{article.urlToImage}}" alt="News Image"class="img-responsive" float="left">
-          </div>
+{% for article in articles %}
 
-            <div>
-              <h3>{{ article.title }}</h3>
-
-              <p class="description"> {{ article.description }}</p>
-              <p class="author"><b>{{ article.author }}</b> </p>
-              <p class="date"><b>{{ article.publishedAt }}</b> </p>
-              <p> <i><a href ="{{ article.url}}"> Read full Article</a> </i> </p>
+  <div class="container"> 
+      <div class="row">
+        <div class ="col-md-6">
+            <div class = "image-url">
+              <img src="{{article.urlToImage}}" alt="News Image"class="img-responsive" float="left">
             </div>
-        </div>
-    </div>
 
-</div>
+              <div>
+                <h3>{{ article.title }}</h3>
+
+                <p class="description"> {{ article.description }}</p>
+                <p class="author"><b>{{ article.author }}</b> </p>
+                <p class="date"><b>{{ article.publishedAt }}</b> </p>
+                <p> <i><a href ="{{ article.url}}"> Read full Article</a> </i> </p>
+              </div>
+          </div>
+      </div>
+
+  </div>
 {%endfor%}
 <!-- {% endblock %}
 {% block styles%}

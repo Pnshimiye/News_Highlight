@@ -3,25 +3,27 @@
 {% extends 'base.html'%}
 {% macro displaySourceList(source_list) %}
 
+
         {% for source in source_list %}
 
-        {% block styles%}
-        {{ super() }}
-        <link rel="stylesheet" href="{{url_for('static',filename='CSS/index.css')}}">
-    {% endblock %}
+        
 
 
 <div class ="container">
-<!-- 
-        <div class="row"> -->
-            <div class="col-xs-6">
+
+        <div class="row">
+            <div class="div class=col-xs-6 col-sm-6 col-md-6 col-lg-6 source">
                 <h3 id="name"><a id="name"href="/article/{{source.id}}">{{source.name}}</a></h3> 
-                <p class ="well"> {{source.description}}</p>
+                <p class ="well text-center"> {{source.description}}</p>
             </div>
-        <!-- </div>
-          -->
+        </div>
+         
 </div>
 
 {% endfor %}
 
 {% endmacro %}
+{% block styles%}
+        {{ super() }}
+        <link rel="stylesheet" href="{{url_for('static',filename='CSS/index.css')}}">
+    {% endblock %}
