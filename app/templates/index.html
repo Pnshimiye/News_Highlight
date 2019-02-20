@@ -9,56 +9,64 @@
 {% endblock %}
 <!Doctype <!DOCTYPE html>
 <html>
-<head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-        <script src="main.js"></script>
-</head>
-<body>
+        <head>
+                <meta charset="utf-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>Page Title</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+                <script src="main.js"></script>
+        </head>
+        <body>
+               
 
-{% block content %}
-<!-- <div class="container"> -->
-        <div class="row">
-             <div class="col-md-3">
+                        {% block content %}
+                        <div class ="jumbotron">
+
+                          <h6>display</h6>              
+                
+                        </div>
+                        <h1>NEWS HIGHLIGHT</h1>
 
 
-        <!-- Business sources -->
-                <h3> Business News Sources </h3>
 
-                <ul>
-                        {{ macro.displaySourceList(business)}}
-                </ul> 
-           </div>
-        </div> 
+                <div class="container">
+                       
 
-        <!-- entertainment  sources-->
-        <h3>Entertainment News Sources</h3>
 
-                <ul>
-                        {{ macro.displaySourceList(entertainment)}}
-                </ul>  
-  
-       
-  
+<!-- Business sources -->
+                        <h2 id ="title"> Business News Sources </h2>
 
-  
-        <h3>Sports News Sources</h3>
-
-        <ul>
-                {{ macro.displaySourceList(sports)}}
-        </ul> 
-
+                        <ul>
+                                {{ macro.displaySourceList(business)}}
+                        </ul> 
         
 
-<!-- </div> -->
-{% endblock%}  
+<!-- entertainment  sources-->
+                        <h2 id ="title">Entertainment News Sources</h2>
+
+                        <ul>
+                                {{ macro.displaySourceList(entertainment)}}
+                        </ul>  
+        
+
+
+
+                
+                        <h2 id ="title">Sports News Sources</h2>
+
+                        <ul>
+                                {{ macro.displaySourceList(sports)}}
+                        </ul> 
+
+                
+
+                </div>
+                {% endblock%}  
 
 
         
-</body>
+        </body>
 </html>
 
 

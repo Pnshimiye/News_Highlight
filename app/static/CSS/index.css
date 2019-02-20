@@ -3,18 +3,40 @@ body{
   color: black;
   text-align:center;
   justify-content: center center;
-}
-ul{
-  display: row;
-  margin-right:auto;
-  margin-left:auto;
-}
-h3{
-  font-weight: 900;
-  color: rgb(230, 207, 173);
-}
 
+  display:inline;
+}
+  /* background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/02/51/79/3957837a1b1e0d0.jpg');
+  background-repeat: no-repeat;*/
+
+ 
+.jumbotron{
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/02/51/79/3957837a1b1e0d0.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} 
+ 
+
+#title{
+  color: rgb(212, 200, 172);
+  font-feature-settings: "abvs"
+
+}
+ 
+ul{
+  display:inline block;
+}
 .container{
+  margin-left:800;
   margin-right:auto;
-  margin-left:auto;
+}
+h1{
+  font-family: monospace;
+  font-size: 0rem;
+  font-synthesis: weight;
+  font-weight: bolder;
+}
+#name:hover{
+color:rgb(212, 200, 172);
 }
